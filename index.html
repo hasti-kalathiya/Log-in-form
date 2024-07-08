@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .v_part {
+            background-color: white;
+            padding: 20px;
+        }
+
+        .v_part1 {
+            background-image: url(img/bg.jpeg);
+            background-size: cover;
+            min-height: 100vh;
+        }
+
+        .img-fluid {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .form-control {
+            border-bottom: 1px solid black;
+            border-top: 0;
+            border-left: 0;
+            border-right: 0;
+            border-radius: 0;
+        }
+
+        .v_hover a:hover {
+            color: #ffc720
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+        .v_font {
+            font-family: "Open Sans", sans-serif;
+            font-weight: 400;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="v_part col-md-7">
+                <a href="#">
+                    <img src="img/logo.png" alt="logo" class="img-fluid p-5">
+                </a>
+                <div class="offset-md-4 v_font">
+                    <h1><b>Welcome Back!</b></h1><br>
+                    <p>Enter your details to access your account.</p>
+                    <form>
+                        <div class=" col-5 col-md-5 mb-3">
+
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp " placeholder="Email"
+                                style="border:0; border-bottom: 1px solid black; border-radius: 0%;">
+                        </div>
+                        <div class=" col-5 mb-3">
+
+                            <input type="password" class="form-control" id="exampleInputPassword1"
+                                placeholder="Password"
+                                style="border:0; border-bottom: 1px solid black; border-radius: 0%;">
+
+                        </div>
+                        <div class="col-lg-5 mb-3 d-md-flex justify-content-between align-items-center">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                            </div>
+                            <div class="v_hover">
+                                <a href="#">Forgot Password?</a>
+                            </div>
+                        </div>
+                        <div class="mb-3 col"><br>
+                            <button class="btn btn-warning" type="button">Log In</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+            <div class="v_part1 col-md-5"></div>
+
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
